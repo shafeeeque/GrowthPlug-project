@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patibandla Dentel</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="shortcut icon" href="/src/Asset/logo.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/58f0251a1f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <header class="">
+      <div class="hidden lg:block bg-[#f3f2f2] text-black h-10">
+        <div class="flex justify-end">
+          <i class="fa-solid fa-location-dot mr-2 mt-3"></i>
+          <h4 class="mr-4 mt-2 font-light">
+            3507 CLEVELAND AVE. NW, CANTON, OH 44709
+          </h4>
+          <button
+            class="rounded-3xl bg-[#4D8791] hover:bg-[#616C94] text-white w-60 h-8 mt-1 mr-2"
+          >
+            REQUEST AN APPOINMENT
+          </button>
+        </div>
+      </div>
+      <!-- location bar -->
+
+      <nav class="hidden lg:block">
+        <div class="flex justify-end h-20">
+          <div class="flex gap-4 font-light items-center lg:text-base">
+            <a href=""><p>HOME</p></a>
+            <a href=""><p>ABOUT</p></a>
+            <a href=""><p>SERVICES</p></a>
+            <a href=""><p>PATIENT RESOURCES</p></a>
+            <a href=""><p>REVIEWS</p></a>
+            <a href=""><p>CONTACT</p></a>
+            <a href=""><p>PAY YOUR BILL</p></a>
+          </div>
+          <div class="flex items-center mr-3">
+            <i class="fa-solid fa-phone p-3"></i>
+            <a href=""><p class="text-lg">(330) 452-0695</p></a>
+          </div>
+        </div>
+
+        <!-- location bar -->
+
+        <!-- logo img -->
+        <div
+          class="absolute top-0 mt-2 left-16 object-fill w-36 h-36 bg-white rounded-full"
+        >
+          <img class="w-36 h-36" src="/src/Asset/logo.webp" alt="" />
+        </div>
+        <!-- logo img -->
+      </nav>
+
+      <!-- sm icons -->
+      <div class="flex justify-between h-16 lg:hidden">
+        <div>
+          <img class="h-12 object-fill" src="/src/Asset/logo.webp" alt="" />
+        </div>
+        <div class="mt-4">
+          <i class="fa-solid fa-phone p-3" style="color: #8e8f91"></i>
+          <i class="fa-regular fa-calendar-days p-3" style="color: #8e8f91"></i>
+          <i class="fa-solid fa-bars p-3"></i>
+        </div>
+      </div>
+
+      <!-- sm icons -->
+    </header>
+
+    <!-- bg video -->
+
+    <section class="">
+      <video class="" muted width="100%" height="100%" autoplay loop>
+        <source src="/src/Asset/bg-video.mp4" />
+      </video>
+      <div class="flex justify-center md:justify-start">
+        <div class="top-16 absolute text-white font-thin md:top-60 md:ml-20">
+          <div>
+            <h1 class="text-3xl md:text-4xl lg:text-7xl lg:font-normal">
+              We'll keep you
+            </h1>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl lg:font-semibold">
+              smiling!
+            </h1>
+          </div>
+          <div class="">
+            <button
+              class="rounded-3xl w-52 h-8 bg-[#4D8791] hover:bg-[#616C94] text-white mt-4 text-sm lg:w-60 lg:text-lg lg:mt-7"
+            >
+              REQUEST AN APPOINMENT
+            </button>
+          </div>
+          <div class="">
+            <button
+              class="rounded-3xl w-32 h-8 bg-[#4D8791] hover:bg-[#616C94] text-white mt-2 text-sm lg:w-44 lg:text-lg lg:mt-4"
+            >
+              PAY ONLINE
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bg video -->
+
+    <!-- sec 2 -->
+
+    <section>
+      <div>
+        <div class="mt-4 flex justify-center">
+          <h1
+            class="text-xl md:text-2xl md:font-medium lg:text-3xl lg:font-medium xl:text-4xl xl:font-semibold text-[#616c94]"
+          >
+            Welcome to Patibandla Dental
+          </h1>
+        </div>
+
+        <div class="mt-4 flex justify-center">
+          <h1 class="text-sm md:text-md lg:text-lg xl:text-xl text-[#000000]">
+            SERVING THE COMMUNITY OF CANTON, OH
+          </h1>
+        </div>
+      </div>
+      <div class="lg:flex lg:mt-10">
+        <div>
+          <div class="flex justify-center mt-5 h-72 md:h-96 lg:w-96">
+            <img
+              class="sm:w-64 h-64 md:w-80 md:h-80"
+              src="/src/Asset/team-home.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-center">
+            <h1
+              class="text-xl md:text-2xl md:font-medium lg:text-3xl lg:font-medium xl:text-4xl text-[#616C94]"
+            >
+              Patibandla Dental
+            </h1>
+          </div>
+          <div>
+            <h3 class="md:text-2xl lg:mt-6">
+              As a multigenerational family practice, our dentist and team are
+              happy to engage with your children, chat with your grandparents
+              and get to know you. We care about you as an individual and are
+              thrilled to provide comprehensive, considerate care with service
+              to match. We invite you to learn more about us and our treatments
+              for dental care in Canton, Ohio, by calling our office today. Let
+              us be the reason why you smile!
+            </h3>
+            <div class="flex justify-center mt-7">
+              <i class="fa-brands fa-instagram p-3"></i>
+              <i class="fa-brands fa-google p-3"></i>
+              <i class="fa-brands fa-facebook p-3"></i>
+              <i class="fa-brands fa-yelp p-3"></i>
+            </div>
+            <div class="flex justify-center">
+              <button
+                class="rounded-3xl w-32 h-8 bg-[#4D8791] hover:bg-[#616C94] text-white mt-2 text-sm"
+              >
+                Meet The Team
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sec 3 -->
+
+    <section
+      class="bg-cover bg-center w-full h-[1350px] mt-5 md:h-[1000px] lg:h-[600px]"
+      style="background-image: url('/src/Asset/pexels-fwstudio-172295.jpg')"
+    >
+      <div class="lg:flex lg:justify-center">
+        <div class="flex justify-center lg:w-96">
+          <img
+            class="mt-8 object-contain"
+            src="/src/Asset/doc-pic.webp"
+            alt=""
+          />
+        </div>
+        <div class="lg:w-1/2 lg:mt-6 lg:ml-3 ml-2">
+          <h1 class="flex justify-center font-medium text-3xl text-[#616c94]">
+            Meet Dr. Vani Patibandla
+          </h1>
+          <p class="text-center lg:mt-2">
+            Dr. Vani M. Patibandla has been practicing in the Canton, Ohio, area
+            for 25 years. She was an undergraduate at Kenyon College, where she
+            graduated with a degree in Biochemistry. She later went on to
+            graduate from Case Western Reserve University School of Dentistry in
+            1998. She also completed a year-long general practice residency and
+            continues her education every quarter with the local dental society
+            and study club. Dr. Patibandla is a member of the American Dental
+            Association®, Academy of General Dentistry, and Stark Dental
+            Society. She is also an Ohio Dental Associate. Her goal as a dentist
+            is to improve her patients’ oral health while also leaving them with
+            positive impressions by creating genuine and long-lasting
+            relationships with them. Seeing improvement in a patient’s oral
+            health genuinely makes her day. And creating an environment of
+            positivity and laughter with her team results in a wonderful
+            atmosphere for our patients to enjoy. This invites new patients to
+            visit, many of whom have heard about us by word of mouth. Dr.
+            Patibandla has a wonderful husband and two beautiful daughters. When
+            not in the office, she loves reading, going on walks and hikes,
+            meditating, and cooking.
+          </p>
+          <div class="flex justify-center">
+            <button
+              class="rounded-3xl w-52 h-8 bg-[#4D8791] hover:bg-[#616C94] text-white mt-4 text-sm lg:w-60 lg:text-lg lg:mt-7"
+            >
+              REQUEST AN APPOINMENT
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sec 4 -->
+
+    <section class="h-1/2 lg:h-[640px] xl:h-[750px]">
+      <hr />
+      <div class="mt-4 grid grid-cols-1 gap-5 text-white lg:hidden">
+        <figure class="p-3 relative flex justify-center">
+          <img src="/src/Asset/service 1.jpg" alt="" />
+          <figcaption class="absolute bottom-3 top-1/2 font-normal text-2xl">SERVICES</figcaption>
+        </figure>
+        <div>
+          <figure class="p-3 relative flex justify-center">
+            <img src="/src/Asset/service 2.jpg" alt="" />
+            <figcaption class="absolute bottom-3 bg-black">
+              General & Family Dentistry
+            </figcaption>
+          </figure>
+
+          <figure class="p-3 relative flex justify-center">
+            <img src="/src/Asset/service 3.jpg" alt="" />
+            <figcaption class="absolute bottom-3 bg-black">
+              Restorative Dentistry
+            </figcaption>
+          </figure>
+
+          <figure class="p-3 relative flex justify-center">
+            <img src="/src/Asset/service 4.jpg" alt="" />
+            <figcaption class="absolute bottom-3 bg-black">
+              Dental Technology
+            </figcaption>
+          </figure>
+
+          <figure class="p-3 relative flex justify-center">
+            <img src="/src/Asset/service 5.jpg" alt="" />
+            <figcaption class="absolute bottom-3 bg-black">
+              Cosmetic Dentistry
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="hidden lg:block text-white">
+        <div class="flex">
+          <div class="lg:w-1/3 lg:h-96 mt-2">
+            <figure class="p-3 relative flex justify-center">
+              <img src="/src/Asset/service 1.jpg" alt="" />
+              <figcaption class="absolute bottom-3 top-1/2  font-normal text-3xl">
+                SERVICES
+              </figcaption>
+            </figure>
+          </div>
+          <div class="lg:w-2/3 lg:h-96 lg:grid lg:grid-cols-2">
+            <figure class="p-3 relative flex justify-center">
+              <img src="/src/Asset/service 2.jpg" alt="" />
+              <figcaption class="absolute bottom-3 bg-black">
+                General & Family Dentistry
+              </figcaption>
+            </figure>
+
+            <figure class="p-3 relative flex justify-center">
+              <img src="/src/Asset/service 3.jpg" alt="" />
+              <figcaption class="absolute bottom-3 bg-black">
+                Restorative Dentistry
+              </figcaption>
+            </figure>
+
+            <figure class="p-3 relative flex justify-center">
+              <img src="/src/Asset/service 4.jpg" alt="" />
+              <figcaption class="absolute bottom-3 bg-black">
+                Dental Technology
+              </figcaption>
+            </figure>
+
+            <figure class="p-3 relative flex justify-center">
+              <img src="/src/Asset/service 5.jpg" alt="" />
+              <figcaption class="absolute bottom-3 bg-black">
+                Cosmetic Dentistry
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-cover bg-center w-full h-auto mt-5"
+      style="background-image: url('/src/Asset/pexels-fwstudio-172295.jpg')"
+    >
+      <div class="lg:flex lg:ml-10 lg:text-xl">
+        <div class="lg:w-1/2 lg:ml-3 ml-2 lg:mt-40">
+          <h1
+            class="flex justify-center font-normal text-6xl text-[#616c94] lg:mt-6"
+          >
+            What makes us different?
+          </h1>
+          <p class="text-center mt-4">
+            As a comprehensive practice, we do it all. From cosmetic and general
+            dentistry to restorative dentistry, our team is here to help you
+            with your dental needs. We see children as young as 2 years old and
+            are delighted to get to know you and your family as we see to your
+            dental health.
+          </p>
+          <div class="lg:flex">
+            <div class="flex justify-start">
+              <button
+                class="rounded-3xl w-52 h-8 bg-[#4D8791] hover:bg-[#616C94] text-white mt-4 text-sm lg:w-60 lg:text-lg lg:mt-7 lg:mr-5"
+              >
+                REQUEST AN APPOINMENT
+              </button>
+            </div>
+            <div class="flex justify-start">
+              <button
+                class="rounded-3xl w-52 h-8 bg-[#4D8791] hover:bg-[#616C94] text-white mt-4 text-sm lg:w-60 lg:text-lg lg:mt-7"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div
+            class="flex justify-center mt-5 h-72 md:h-96 lg:w-96 lg:mt-52 lg:ml-24"
+          >
+            <img
+              class="sm:w-64 h-64 md:w-80 md:h-80"
+              src="/src/Asset/team-home.webp"
+              alt=""
+            />
+          </div>
+          <div class="hidden xl:block">
+            <div class="absolute top-[490vh] w-60 h-60 left-[130vh]">
+              <img
+                class="absolute top-96"
+                src="/src/Asset/team-home.webp"
+                alt=""
+              />
+            </div>
+            <div class="mt-5 h-72 md:h-96 lg:w-96">
+              <img
+                class="absolute top-[540vh] w-44 h-44 left-[180vh]"
+                src="/src/Asset/team-home.webp"
+                alt=""
+              />
+            </div>
+            <div class="absolute top-[390vh] w-44 h-44 left-[160vh]">
+              <img
+                class="absolute top-96"
+                src="/src/Asset/team-home.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="bg-[#D3E6E2] h-full w-full p-5">
+        <div class="border-solid border-2 border-white w-full">
+          <h1 class="text-2xl flex justify-center ml-2 mt-3">
+            REAL REVIEWS FROM PATIENTS LIKE YOU
+          </h1>
+          <p class="text-xl flex justify-center mt-4 ml-2">
+            REAL REVIEWS FROM PATIENTS LIKE YOU
+          </p>
+
+          <p class="text-xl flex justify-center mt-4 ml-2">
+            Sishuka M | oct 2023
+          </p>
+
+          <div class="flex justify-center mt-14">
+            <div>
+              <h1 class="flex justify-center text-2xl">helloo</h1>
+              <div class="flex justify-center mt-4 mb-4">
+                <i class="fa-solid fa-star" style="color: #fbf309"></i>
+                <i class="fa-solid fa-star" style="color: #fbf309"></i>
+                <i class="fa-solid fa-star" style="color: #fbf309"></i>
+                <i class="fa-solid fa-star" style="color: #fbf309"></i>
+              </div>
+              <div class="flex justify-center">
+                <img
+                  class="w-32 h-32 object-contain"
+                  src="/src/Asset/google-removebg-preview.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- image slider-->
+
+
+    <section class="w-full h-[55vh] mt-8 bg-white">
+      <div class="max-w-8xl mx-auto">
+
+        <div id="default-carousel" class="relative" data-carousel="static">
+           
+              <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 xl:w-full 2xl:h-96">
+                 
+                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">Primer Slide</span>
+                      <img src="/src/Asset/g1.webp" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                  </div>
+                 
+                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <img src="/src/Asset/g2.webp" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                  </div>
+                 
+                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <img src="/src/Asset/g3.webp" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                  </div>
+
+                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">Primer Slide</span>
+                    <img src="/src/Asset/g4.webp" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                </div>
+               
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/src/Asset/g5.webp" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                </div>
+               
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/src/Asset/g6.webp" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                </div>
+              </div>
+              
+              
+              <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+              </div>
+             
+              <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                  <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                      <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                      <span class="hidden">Anterior</span>
+                  </span>
+              </button>
+              <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                  <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                      <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                  </span>
+              </button>
+          </div>
+          <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+      </div>
+
+    </section>
+
+    <!-- image slider -->
+
+    <section class="relative flex justify-center">
+      <div
+        class="bg-cover bg-center w-full h-[250px] mt-5 md:h-[1000px] lg:h-[350px] opacity-50 items-start"
+        style="
+          background-image: url('/src/Asset/pexels-olga-lioncat-7245510.jpg');
+        "
+      ></div>
+      <div class="absolute">
+        <h2
+          class="text-black flex justify-center items-center text-xl lg:mt-20 mt-8 md:text-4xl lg:text-5xl"
+        >
+          Welcome
+        </h2>
+        <div class="lg:flex lg:gap-5">
+          <div class="">
+            <button
+              class="rounded-3xl w-52 h-8 bg-[#4D8791] hover:bg-[#616C94] text-white mt-8 text-sm lg:w-60 lg:text-lg"
+            >
+              REQUEST AN APPOINMENT
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <button
+              class="rounded-3xl w-32 h-8 bg-[#4D8791] hover:bg-[#616C94] text-white mt-8 text-sm lg:w-44 lg:text-lg"
+            >
+              CALL US
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
+        width="100%"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="flex justify-center">
+      <div class="mt-3">
+        <div class="w-36 h-36 flex justify-center ml-16 bg-white rounded-full">
+          <img class="w-36 h-36" src="/src/Asset/logo.webp" alt="" />
+        </div>
+        <div class="flex justify-center">
+          <h1>CANTON, OH</h1>
+        </div>
+        <div class="flex justify-center text-sm">
+          3507 CLEVELAND AVE. NW, Canton, OH 44709
+        </div>
+        <div class="flex justify-center">(330) 452-0695</div>
+        <div class="flex justify-center">drpatibandladds@gmail.com</div>
+        <div class="flex justify-center mt-7">
+          <i class="fa-brands fa-instagram p-3"></i>
+          <i class="fa-brands fa-google p-3"></i>
+          <i class="fa-brands fa-facebook p-3"></i>
+          <i class="fa-brands fa-yelp p-3"></i>
+        </div>
+      </div>
+    </section>
+
+    <footer class="">
+      <div class="flex justify-evenly">
+        <p>© Copyright 2023 GrowthPlug, Inc</p>
+        <p>Privacy Policy</p>
+        <p>Terms and Conditions</p>
+        <p>Accessibility Statement</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+
+p,li {
+    font-size: 18px;
+      color: #000;
+}
+ #specialties .main-box .recent-box:hover h5 {
+    background: #6fb6b6 !important;
+    color: #f8f8f8 !important;
+}
+
+  /*Header*/
+  li.header-links a:hover {
+    color: #616C94 !important;
+}
+
+li.header-links a {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000 !important;
+}
+
+.w1f74oox ul.mainMenu-1.ul-links {
+    justify-content: flex-end;
+}
+
+
+li.header-links a.header__call:hover {
+    background: #fff !important;
+    text-decoration: underline;
+}
+
+li.header-links a.header__call {
+    font-size: 25px !important;
+    color: #616C94 !important;
+}
+  
+.newton-section > a:nth-child(1) {
+    display: none;
+}
+
+.logo-head {
+    background: linear-gradient(270deg, #D0D0D0 0%, rgb(255 255 255) 98.49%) !important;
+}
+a.office-call {
+    color: #000 !important;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+a.req__header:hover {
+    text-decoration: none;
+    background: #616C94;
+    transition: all ease 300ms;
+}
+
+a.req__header {
+    background: #6FB6B6;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 7px 25px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+}
+
+
+
+
+.w1f74oox .andover-section {
+    width: unset;
+}
+
+
+.w1f74oox .newton-section {
+    width: unset;
+
+}
+
+
+a.office-call i {
+    color: #6FB6B6;
+}
+
+  .w1f74oox .logo-head {
+
+    justify-content: flex-end;
+ 
+}
+
+
+
+  
+  /*Footer*/
+
+      section#footer {
+    padding-top: 0 !important;
+}
+
+  .footer {
+    background: url(https://gp-assets-1.growthplug.com/website_files/4952/main-circles.webp);
+    background-size: cover;
+    background-position: 100% center;
+    padding-top: 20px;
+}
+
+  #specialties .contentwrap {
+    text-align: unset !important;
+}
+ .header-links {
+    padding: 0px 12px 0px !important;
+}
+#specialties .contentwrap ul li {
+    color: #000 !important;
+}
+ .subMenu-1 li:hover > a, .subMenu-1 li:hover > a:hover {
+    color: #fff !important;
+}
+
+
+
+  @media (min-width:1100px) {
+
+
+.w1f74oox .logo-section img {
+    height: unset;
+    max-height: 154px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 50%;
+    top: 10px;
+    position: absolute;
+    left: 70px;
+}
+.w1cj7mvd .banner-inner {
+    padding-left: 10%;
+}
+}
+
+  @media (max-width:1100px) {
+
+#navigation ul.header-rt li.ctanav2 .btn {
+    width: unset !important;
+}
+ul.header-rt li {
+    margin: 0 auto !important;
+}
+
+     #navigation .navbar.builder-dynamic-fixed .navbar-brand img {
+    height: 60px !important;
+}
+
+a.navbar-brand.logo.visible-xs {
+    padding: 0 !important;
+}
+  }

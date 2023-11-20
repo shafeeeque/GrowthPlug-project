@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.location{
+    display: flex;
+    justify-content: right;
+} 
+

@@ -1,0 +1,19 @@
+function onCloseBuilderModal() {
+    const modalMask = document.getElementById("modal-mask-element");
+    const modalContainer = document.getElementById("modal-container-element");
+    if (modalMask && modalContainer) {
+        modalMask.style.display = "none";
+        modalContainer.style.display = "none";
+    }
+}
+
+const modalCloseIcon = document.getElementById("modal-close-icon");
+const modalCloseBtn = document.getElementById("modal-close-button");
+if (modalCloseBtn && modalCloseIcon) {
+    modalCloseBtn.addEventListener("click", () => onCloseBuilderModal(), {
+        once: true,
+    });
+    modalCloseIcon.addEventListener("click", () => onCloseBuilderModal(), {
+        once: true,
+    });
+}

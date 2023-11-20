@@ -1,0 +1,23 @@
+$('.header-container > div.center-section > ul > li:nth-last-child(1) >').html('<a class="header__call" href="tel:(330) 452-0695"><i class="fa fa-phone " aria-hidden="true"></i>&nbsp;<!-- -->(330) 452-0695</a>')
+
+$('.doc_section .col-md-7').append('<a class="btn__pati __green" data-target="#appointment" data-toggle="modal">Request an Appointment</a>')
+
+$('.andover-section').html('<a class="req__header" data-target="#appointment" data-toggle="modal" style="visibility: visible; animation-name: slideInUp;">Request an Appointment</a>')
+
+$('.newton-section > a:nth-child(2)').html('<i class="fa fa-map-marker builder-editable-elements elementId-2-3" aria-hidden="true"></i> 3507 CLEVELAND AVE. NW, CANTON, OH 44709')
+
+
+$('#about .header').html('<h2 class="section-header text-center wow fadeInDown" >Welcome to Patibandla Dental</h2><h3 class="text-center wow fadeInDown" >SERVING THE COMMUNITY OF CANTON, OH</h3>')
+
+$('.doc_section h3.com_title').html('Meet Dr. Vani Patibandla')
+
+$('.banner-div').append('<a class="expertise__logo"href="https://www.expertise.com/oh/canton/dentists" ><img width="200" height="160" src="https://res.cloudinary.com/expertise-com/image/upload/remote_media/awards/oh_canton_dentists_2023_transparent.svg" alt="Top Dentist in Canton" /></a>')
+
+
+$('.banner-inner').html('<div class="banner-inner"><div class="welcome-title wow slideInDown  animated"">Welcome!</div><div class="title-2 wow slideInLeft" ">We’ll keep you smiling!</div><div class="banner__btns"><a class="button-banner wow slideInUp" data-target="#appointment" data-toggle="modal" >REQUEST AN APPOINTMENT</a><a class="button-banner wow slideInUp" href="https://www.patientviewer.com/?ID=9262&PAY=Y&CID=1" target="_blank" >Pay Online</a></div></div>')
+
+
+
+
+$('.about__image img').attr('alt','Doctor')
+$('.slick-slide img').attr('alt','Gallery')
